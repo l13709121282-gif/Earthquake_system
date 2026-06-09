@@ -18,8 +18,8 @@
 #define GATEWAY_ID 0xFFFF
 
 // ==================== WiFi ====================
-#define DEFAULT_WIFI_SSID "Mywifi"
-#define DEFAULT_WIFI_PASS "1234567890"
+#define DEFAULT_WIFI_SSID "***"
+#define DEFAULT_WIFI_PASS "***"
 
 // ==================== PCA ====================
 #define PCA_INPUT_DIM 300
@@ -63,10 +63,10 @@
 #define DTU_CMD_SAVE "config,set,save\r\n"
 
 // ==================== MQTT ====================
-#define MQTT_SERVER "w8381dbc.ala.cn-hangzhou.emqxsl.cn"
+#define MQTT_SERVER "***"
 #define MQTT_PORT 8883
-#define MQTT_USER "User"
-#define MQTT_PASSWORD "1234567890"
+#define MQTT_USER "***"
+#define MQTT_PASSWORD "***"
 #define MQTT_TOPIC_DATA "earthquake/data"
 #define MQTT_TOPIC_ALERT "earthquake/alert"
 #define MQTT_TOPIC_HEARTBEAT "earthquake/heartbeat"
@@ -507,9 +507,9 @@ void saveConfig() {
 void loadConfig() {
   File f = FFat.open("/config.json", FILE_READ);
   if (!f) {
-    config_ssid = "Mywifi";
-    config_pass = "1234567890";
-    config_dingtalk = "8d8aaaf366694452a076974b719cbc35ee1efd133a41cc5c3a2fe3462ec32d63";
+    config_ssid = "***";
+    config_pass = "***";
+    config_dingtalk = "***";
     config_alertThreshold = 0.5f;
     return;
   }
@@ -538,9 +538,9 @@ void loadConfig() {
   config_pass = findStr("pass");
   config_dingtalk = findStr("dingtalk");
   config_alertThreshold = findFloat("threshold");
-  if (config_ssid.length() == 0) config_ssid = "Mywifi";
-  if (config_pass.length() == 0) config_pass = "1234567890";
-  if (config_dingtalk.length() == 0) config_dingtalk = "8d8aaaf366694452a076974b719cbc35ee1efd133a41cc5c3a2fe3462ec32d63";
+  if (config_ssid.length() == 0) config_ssid = "***";
+  if (config_pass.length() == 0) config_pass = "***";
+  if (config_dingtalk.length() == 0) config_dingtalk = "***";
   if (config_alertThreshold < 0.1f) config_alertThreshold = 0.5f;
 }
 
