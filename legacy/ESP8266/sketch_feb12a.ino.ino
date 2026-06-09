@@ -4,8 +4,8 @@
 #include <BearSSLHelpers.h>
 
 // WiFi设置
-const char *ssid = "Mywifi";
-const char *password = "1234567890";
+const char *ssid = "***";
+const char *password = "***";
 
 // MQTT设置
 const int mqtt_port = 8883;
