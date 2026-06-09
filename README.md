@@ -1,8 +1,8 @@
-# 🌍 地震预警系统 Earthquake Early Warning System
+#  地震预警系统 Earthquake Early Warning System
 
 基于 ESP32 + LoRa + 4G DTU + Edge Impulse AI 的分布式地震预警系统。（仍在持续更新与优化）
 
-## 📡 系统架构
+##  系统架构
 
 ```
 
@@ -15,7 +15,7 @@
 
 ```
 
-## 🚀 快速开始
+##  快速开始
 
 ### 硬件要求
 - **节点**：ESP32 + MPU6050 + DX-LR22 (LoRa)
@@ -28,7 +28,7 @@
 4. 将 `gateway/` 烧录到网关 ESP32-S3
 5. 配置 `config.h` 中的 WiFi、MQTT、钉钉 Token 等参数
 
-## 📁 目录结构
+##  目录结构
 
 ```
 
@@ -44,27 +44,27 @@
 
 ## 🔧 主要功能
 
-- ✅ 100Hz 三轴加速度实时采集
-- ✅ Edge Impulse 地震检测（Mcu-quake开源检测模型）
-- ✅ Conv1d 全连接扩张卷积 地震波形预测模型
-- ✅ LoRa 远距离数据传输 (SF11, BW125)
-- ✅ PCA 数据压缩 (900→5, 300→10)
-- ✅ 4G DTU 透传钉钉告警 + MQTT
-- ✅ 双模型投票 (PhaseNet + EQTransformer)
-- ✅ 烈度分布热力图
-- ✅ 手机 APP 全屏预警弹窗
-- ✅ 时间同步 (NTP + LoRa 广播)
-- ✅ 局域网内参与点相互导航和通信、坐标发送
+-  100Hz 三轴加速度实时采集
+-  Edge Impulse 地震检测（Mcu-quake开源检测模型）
+-  Conv1d 全连接扩张卷积 地震波形预测模型
+-  LoRa 远距离数据传输 (SF11, BW125)
+-  PCA 数据压缩 (900→5, 300→10)
+-  4G DTU 透传钉钉告警 + MQTT
+-  双模型投票 (PhaseNet + EQTransformer)
+-  烈度分布热力图
+-  手机 APP 全屏预警弹窗
+-  时间同步 (NTP + LoRa 广播)
+-  局域网内参与点相互导航和通信、坐标发送
 
-## 📄 许可证
+##  许可证
 
 本项目采用 [MIT License](LICENSE)
 
-## ⚠️ 免责声明
+##  免责声明
 
 本系统仅供研究和实验目的，不构成正式的地震预警系统。请勿将本系统用于生命财产安全相关的决策。
 
-## 🙏 致谢
+##  致谢
 
 ### MCU-Quake 模型
 - **论文**：[Real-time discrimination of earthquake signals by integrating AI technology into IoT devices](https://doi.org/10.1038/s43247-025-02003-y)
