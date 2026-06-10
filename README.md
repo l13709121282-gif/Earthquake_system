@@ -1,4 +1,4 @@
-#  地震预警系统 (Earthquake Early Warning System)
+#  基于边缘智能的广域地震监测网络 (Earthquake Early Warning System)
 
 基于 ESP32 + LoRa + 4G DTU + Edge Impulse AI 的分布式地震预警系统。（仍在持续更新与优化）
 
@@ -45,8 +45,8 @@
 ## 🔧 主要功能
 
 -  100Hz 三轴加速度实时采集
--  Edge Impulse 地震检测（Mcu-quake开源检测模型）
--  Conv1d 全连接扩张卷积 地震波形预测模型
+-  Edge Impulse 地震检测（Mcu-Quake开源检测模型）
+-  Conv1d 全连接扩张卷积 地震波形预测模型(灵感来源于WaveNet空洞卷积模型)
 -  LoRa 远距离数据传输 (SF11, BW125)
 -  PCA 数据压缩 (900→5, 300→10)
 -  4G DTU 透传钉钉告警 + MQTT
@@ -73,6 +73,6 @@
 - **许可证**：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 - **模型代码**：[ScienceDB](https://doi.org/10.57760/sciencedb.10775)
 
-- **PhaseNet / EQTransformer** - SeisBench 预训练模型
+### PhaseNet / EQTransformer - SeisBench 预训练模型
   - 来源：[SeisBench](https://github.com/seisbench/seisbench)
   - 许可证：MIT License
